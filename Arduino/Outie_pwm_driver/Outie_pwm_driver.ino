@@ -10,6 +10,10 @@
  * terminated wiht a carraige return '/n'
  * 
  * Arduino PWM pins are 3,5,6,9,10,11
+ * 
+ * Disable Auto Reset on Serial connection:
+ * Stick a 120 ohm resistor in the headers between 5v and reset on the arduino
+
  */
 
 // pins for the PWM circuits
