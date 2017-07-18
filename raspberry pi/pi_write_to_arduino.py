@@ -20,7 +20,7 @@ ser = serial.Serial(
 print "Serial is open: " + str(ser.isOpen())
 
 print "Now Writing"
-ser.write("6:12") #pin 6, PWM 100
+ser.write("6:12,5:50") #pin 6, PWM 100
 ser.write('\n')
 
 print "Did write, now read"
