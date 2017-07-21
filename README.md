@@ -20,3 +20,6 @@ Raspberry Pi sends PWM commands to the Arduino over Serial 115200
 
 ser.write("6:12") #pin 6, PWM 100
 ser.write('\n')
+
+Raspberry Pi Movie Player
+ * OMX Wrapper for Python
