@@ -21,5 +21,12 @@ Raspberry Pi sends PWM commands to the Arduino over Serial 115200
 ser.write("6:12") #pin 6, PWM 100
 ser.write('\n')
 
+
 Raspberry Pi Movie Player
  * OMX Wrapper for Python
+ 
+ Raspberry Pi DMX Writer
+  * raspberry pi sends serial commands to an Arduino that commands the DMX lights using the DMX Simple Arduino library:
+  https://github.com/PaulStoffregen/DmxSimple
+  
+  
