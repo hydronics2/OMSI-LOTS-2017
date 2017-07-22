@@ -21,17 +21,32 @@ void setup() {
   ** easily change the number of channels sent here. If you don't
   ** do this, DmxSimple will set the maximum channel number to the
   ** highest channel you DmxSimple.write() to. */
-  DmxSimple.maxChannel(255);
+  DmxSimple.maxChannel(511);
 }
 
 void loop() {
   int brightness;
   /* Simple loop to ramp up brightness */
   for (brightness = 0; brightness <= 255; brightness++) {
-    
+    brightness++;
     /* Update DMX channel 1 to new brightness */
-    DmxSimple.write(1, 10);
+    DmxSimple.write(1, 8);
     DmxSimple.write(2, brightness);
+    DmxSimple.write(4, 8);
+    DmxSimple.write(5, 55);
+    DmxSimple.write(7, 8);
+    DmxSimple.write(8, 105);
+    DmxSimple.write(10, 8);
+    DmxSimple.write(11, brightness);
+    DmxSimple.write(13, 8);
+    DmxSimple.write(14,brightness);
+    DmxSimple.write(16, 8);
+    DmxSimple.write(17,10);
+    DmxSimple.write(19, 8);
+    DmxSimple.write(20,30);
+    
+    
+
     
     /* Small delay to slow down the ramping */
     delay(10);
